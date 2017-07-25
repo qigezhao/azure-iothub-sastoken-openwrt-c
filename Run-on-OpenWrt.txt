@@ -1,0 +1,17 @@
+root@OpenWrt:/# opkg install azure-sastoken.ipk 
+Installing azure-sastoken (1.0-1) to root...
+Configuring azure-sastoken.
+root@OpenWrt:/# 
+root@OpenWrt:/# azure-sastoken 
+SASToken> (debug) expiry = 1501568074
+SASToken: signature-string = P85NiR4wkzt38L1yNY1RkEBpWTuOg7h4m5o%2BpPBwg50%3D
+Microsoft Azure IotHub SASToken (134 bytes)
+[SharedAccessSignature sig=P85NiR4wkzt38L1yNY1RkEBpWTuOg7h4m5o%2BpPBwg50%3D&se=1501568074&skn=iothubowner&sr=arn-mqtt.azure-devices.net]
+
+SASToken> (debug) expiry = 1501568074
+SASToken: signature-string = bmL2LD6pCTvF1Q8LHIc8I3x2yi4MYCMCzVSZKTA1TEk%3D
+Microsoft Azure IotHub SASToken (143 bytes)
+[SharedAccessSignature sig=bmL2LD6pCTvF1Q8LHIc8I3x2yi4MYCMCzVSZKTA1TEk%3D&se=1501568074&skn=device&sr=myhub.azure-devices.cn%2Fdevices%2Fdevice1]
+
+root@OpenWrt:/# 
+
