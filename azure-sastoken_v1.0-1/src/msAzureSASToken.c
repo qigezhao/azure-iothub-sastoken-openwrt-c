@@ -12,7 +12,7 @@
  *
  * ShareAccessSignature sig={signature-string}&se={expiry}&skn={policy-name}&sr={URL-encoded-resourceURI}
  *
- * {signature-string}: base64(sha256(urlEncode(uri)+"\n"+expery))
+ * {signature-string}: urlEncode(base64(HMACSha256(urlEncode(uri)+"\n"+expery, key)))
  * {expery}: seconds since "1970-01-01 00:00:00"
  * {policy-name}:
  * {URL-encoded-resourceURI}:
